@@ -1,11 +1,81 @@
 <!DOCTYPE html>
+
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <title>Corpu Sanu</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Selbstheilungs-Kurse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-  <h1>Willkommen bei Corpu Sanu</h1>
-  <p>Diese Seite ist gerade im Aufbau.</p>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Navigation -->
+  <header class="bg-white shadow">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">HeilDichSelbst</h1>
+      <nav>
+        <a href="#kurse" class="text-gray-700 hover:text-indigo-600 mx-2">Kurse</a>
+        <a href="#login" class="text-gray-700 hover:text-indigo-600 mx-2">Login</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="bg-indigo-50 py-20">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-4">Lerne dich selbst zu heilen</h2>
+      <p class="text-lg mb-6">Unsere Online-Kurse helfen dir dabei, Körper und Geist in Einklang zu bringen – jederzeit, von überall.</p>
+      <a href="#login" class="bg-indigo-600 text-white px-6 py-3 rounded-lg text-lg hover:bg-indigo-700 transition">Jetzt einloggen</a>
+    </div>
+  </section>
+
+  <!-- Kursübersicht -->
+  <section id="kurse" class="py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h3 class="text-2xl font-bold mb-8 text-center">Unsere beliebtesten Kurse</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Selbstheilung & Meditation</h4>
+          <p class="text-sm mb-4">Lerne, mit Atemtechniken und Achtsamkeit deine Heilung zu aktivieren.</p>
+          <span class="text-indigo-600 font-bold">€49</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Ernährung & Energie</h4>
+          <p class="text-sm mb-4">Stärke dein Immunsystem durch bewusste Ernährung und Energiearbeit.</p>
+          <span class="text-indigo-600 font-bold">€59</span>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+          <h4 class="text-xl font-semibold mb-2">Emotionale Blockaden lösen</h4>
+          <p class="text-sm mb-4">Befreie dich von alten Mustern mit gezielten Übungen.</p>
+          <span class="text-indigo-600 font-bold">€39</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Login Bereich -->
+  <section id="login" class="bg-white py-16">
+    <div class="max-w-md mx-auto px-4">
+      <h3 class="text-2xl font-bold text-center mb-6">Login zum privaten Mitgliederbereich</h3>
+      <form class="bg-gray-50 p-6 rounded-xl shadow-md">
+        <label class="block mb-4">
+          <span class="text-gray-700">E-Mail</span>
+          <input type="email" name="email" required class="w-full mt-1 p-2 border border-gray-300 rounded-md" />
+        </label>
+        <label class="block mb-6">
+          <span class="text-gray-700">Passwort</span>
+          <input type="password" name="password" required class="w-full mt-1 p-2 border border-gray-300 rounded-md" />
+        </label>
+        <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded-md hover:bg-indigo-700 transition">Login</button>
+      </form>
+      <p class="text-center text-sm text-gray-500 mt-4">Noch kein Zugang? <a href="#" class="text-indigo-600">Jetzt registrieren</a></p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-gray-200 py-6 text-center text-sm">
+    &copy; 2025 HeilDichSelbst – Alle Rechte vorbehalten.
+  </footer>
+
 </body>
 </html>
